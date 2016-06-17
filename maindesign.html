@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miswa</title>
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FontAwesome Styles-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- Morris Chart Styles-->
+    <link href="assets/js/morris/morris-0.4.3.min.css" rel="stylesheet" />
+    <!-- Custom Styles-->
+    <link href="assets/css/custom-styles.css" rel="stylesheet" />
+    <!-- Google Fonts-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+         <script type="text/javascript" src="assets/js/slide.js"></script>
+    
+</head>
+
+<body>
+    <div id="wrapper">
+      <nav class="navbar navbar-default top-navbar" role="navigation">
+            <div class="navbar-header">
+                
+                <a class="navbar-brand" href="maindesign.html">Miswa</a>
+                <div class="navbar-right">
+                  <a class="navbar-logout" href="logout.php"><button type="button" class="btn btn-default btn-sm">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
+      </p></a>
+                </div>
+                
+               
+          </div>
+        </nav>
+        <!--/. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+
+                    <li>
+                        <a class="active-menu" href="maindesign.html"><i class="fa fa-dashboard"></i>Dashboard</a>
+                    </li>
+                    
+
+                    <li>
+                        <a href="driverTable.php">Manage employees</a>
+                        </li>
+                        
+                         
+					<li>
+                        <a href="table.php">Manage Missions</a>
+                               
+							
+                    </li>
+                   
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-header">
+                            Dashboard 
+                        </h1>
+                    </div>
+                </div>
+              	<div class="row">
+                	<div class="col-md-12">
+                    <h3 class = "Contains">
+                        <script type = "text/javascript">
+          var image1= new Image();
+          image1.src="http://oi62.tinypic.com/2qiz2ih.jpg";
+          var image2= new Image();
+          image2.src="images/ttr.png";
+          var image3= new Image();
+          image3.src="images/redi.png";
+          </script>
+          <img src="" name = "slide" width = "950" >
+                        
+          <script>
+              //this is for the picture slide in the main page
+          var step =1; // the variable step is created with value 1
+          function slideit(){
+          document.images.slide.src=window['image'+step].src; //the name of the image is image1,image2,image3 so with the step, it goes to all pictures.
+          if (step<3) 
+          step++;
+          else
+          step=1;
+          setTimeout(slideit, 2500);//timeout means when the slider stops
+          }
+          slideit(); //calling the function
+          </script>
+                    
+                        </br></br>
+                    </h3>
+                    </div>
+                    
+                </div>
+                <!-- /. ROW  -->
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+                        <div  class="panel-heading">
+                         
+                            <h11>Overview         <span class="glyphicon glyphicon-info-sign"></span></h11> 
+                        </div>
+                        <div class="panel-body">
+                            <p> This website works as a manager for the app Miswa. 
+                                From here you can add all of your employees and set individual missions for them. Have your employees download the app and begin the journey of Miswa! </p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h10>Employees        <span class="glyphicon glyphicon-user"></span></h10>
+                        </div>
+                        <div class="panel-body">
+                            <p> In the manage employees tab you have an overview of all your employees. You can add and edit their information and reset their password in the case someone has forgot it. When adding a new employee, simply enter the same username as password and when your employee uses the app for the first time they will be able to chose their own personal password.
+                                
+                              
+                            </p>
+                        </div>
+                        
+                    </div>
+                </div>
+                    
+                <div class="col-md-4 col-sm-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h12>Missions              <span class="glyphicon glyphicon-road"></span></h12> 
+                        </div>
+                        <div class="panel-body">
+                            <p>In the manage missions tab you can add, edit and delete missions for your employees. A mission is basically used for setting a route to the location your want to send your employees. Your employees can then directly access the mission from the app and get a mapoverview from their current location to the final destination, as well as having a quicker call functionality. This makes it easier for the driver to contact you or the company they are delivering to and facilitates safe driving in connection to using their phone. 
+                                </p>
+                        </div>
+                      
+                    </div>
+                </div>
+				
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+
+</body>
+
+</html>
